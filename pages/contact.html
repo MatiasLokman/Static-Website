@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOK | Contacto</title>
+    <link rel="stylesheet" href="../index.css" />
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/form.js" defer></script>
+    <script src="../scripts/darkToggle.js" defer></script>
+    <script src="../scripts/goTop.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+<!-- HEADER -->
+    <div class="header__container">
+      <header class="header">
+        <div class="header__search">
+          <input
+            class="header__search--input"
+            type="text"
+            placeholder="Buscar"
+          />
+          <button class="header__search--btn">
+            <img src="../img/lupa.svg" alt="Search Button" />
+          </button>
+        </div>
+
+        <div class="header__logo">
+          <img
+            class="logo"
+            src="../img/logo.png"
+            alt="Lok Objetos Logo"
+            width="150px"
+          />
+        </div>
+
+        <button id="menuBtn" class="header__menuBtn">
+          <img class="menuBtn" src="../img/menu.svg" alt="" />
+        </button>
+
+        <nav id="menu" class="header__nav">
+          <a class="header__link" href="/">Home</a>
+          <a class="header__link" href="../pages/contact.html">Contact</a>
+          <a class="header__link" href="../pages/reviews.html">Reviews</a>
+        </nav>
+      </header>
+    </div>
+<!-- / HEADER -->
+
+<!-- MAIN -->
+<main>
+  <div class="contact">
+    <h2 class="contact__titulo">Comunicate con nostros!</h2>
+
+<div class="contact__container">
+<form id="form" action="#">
+<div class="contact__linea1">
+  <div class="contact__nombre">
+    <input id="nombre" class="contact__input1" type="text" placeholder="Nombre" required>
+</div>
+<div class="contact__email">
+  <input id="email" class="contact__input1" type="email" placeholder="Email" required>
+</div>
+</div>
+
+<div class="contact__asunto">
+  <input id="asunto" class="contact__input" type="text" placeholder="Asunto" required>
+</div>
+<div class="contact__mensaje">
+  <textarea id="mensaje" class="contact__input" cols="30" rows="10" placeholder="Describir mensaje.." required></textarea>
+  <div class="button">
+<button id="sendBtn" class="contact__btn" type="button">Enviar</button>
+  </div>
+</form>
+</div>
+</div>
+</main>
+
+<div class="go-top-container">
+  <div class="go-top-button">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+</div>
+<!-- / MAIN -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__links">
+    <a
+      class="footer__link"
+      href="https://www.facebook.com/Lok.objetos"
+      target="_blank"
+    >
+      <img src="../img/facebook.svg" alt="Facebook" />
+    </a>
+    <a
+      class="footer__link"
+      href="https://www.instagram.com/lok.objetos"
+      target="_blank"
+    >
+      <img src="../img/instagram.svg" alt="Instagram" />
+    </a>
+
+    <div class="dark__container">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+  </div>
+  <h4 class="footer__title">
+    Copyright LOK objetos de diseño - 2021. Todos los derechos reservados.
+  </h4>
+</footer>
+<!-- / FOOTER -->
+  </body>
+</html>
